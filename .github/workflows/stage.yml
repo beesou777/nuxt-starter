@@ -1,0 +1,23 @@
+name: Stage Workflow Actions
+
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    if: "contains(github.event.head_commit.message, 'stage-build')"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build and Push Docker Image
+        uses: mr-smithers-excellent/docker-build-push@v5
+        with:
+          image: aio1108/siam99web
+          tags: tc
+          dockerfile: docker-build/web/Dockerfile
+          buildArgs: DOCKER_ENV=stage
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}

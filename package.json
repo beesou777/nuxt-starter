@@ -1,0 +1,40 @@
+{
+  "name": "eventsist",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxi prepare && nuxt dev",
+    "generate": "nuxt generate",
+    "start": "node .output/server/index.mjs",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^1.5.2",
+    "@nuxt/image": "^1.7.0",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxtjs/i18n": "^8.5.5",
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "@vueuse/core": "^10.11.0",
+    "@vueuse/nuxt": "^10.11.0",
+    "eslint": "^8.57.0",
+    "nuxt": "^3.12.2",
+    "nuxt-icon": "^0.6.10",
+    "nuxt-security": "^1.4.3",
+    "sass": "^1.77.6",
+    "sass-loader": "^14.2.1",
+    "vue": "^3.4.31",
+    "vue-router": "^4.4.0",
+    "vue-tsc": "^2.1.6"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.5.1",
+    "lodash-es": "^4.17.21",
+    "pinia": "^2.1.7"
+  }
+}

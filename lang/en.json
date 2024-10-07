@@ -1,0 +1,10 @@
+{
+  "hello": "Hello!",
+  "welcome": "Welcome to Eventsist!",
+  "select_language": "Select Language",
+  "pinia": "Pinia",
+  "tailwindcss": "Tailwind CSS",
+  "nuxt_icon": "Nuxt Icon",
+  "vueuse": "VueUse",
+  "nuxt_image": "nuxt/image"
+}
