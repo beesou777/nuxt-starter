@@ -8,7 +8,9 @@
     "generate": "nuxt generate",
     "start": "node .output/server/index.mjs",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "format": "prettier --check \"**/*.{ts,vue,css,scss,md}\"",
+    "format:fix": "prettier --write \"**/*.{ts,vue,css,scss,md}\""
   },
   "engines": {
     "node": "20.x"
@@ -16,25 +18,25 @@
   "devDependencies": {
     "@nuxt/devtools": "^1.5.2",
     "@nuxt/image": "^1.7.0",
-    "@nuxtjs/eslint-config-typescript": "^12.1.0",
-    "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/i18n": "^8.5.5",
     "@nuxtjs/tailwindcss": "^6.12.0",
     "@vueuse/core": "^10.11.0",
     "@vueuse/nuxt": "^10.11.0",
-    "eslint": "^8.57.0",
     "nuxt": "^3.12.2",
     "nuxt-icon": "^0.6.10",
-    "nuxt-security": "^1.4.3",
-    "sass": "^1.77.6",
-    "sass-loader": "^14.2.1",
+    "nuxt-tiptap-editor": "^2.0.0",
+    "prettier": "^3.3.3",
+    "sass": "^1.79.4",
+    "sass-loader": "^16.0.2",
     "vue": "^3.4.31",
     "vue-router": "^4.4.0",
     "vue-tsc": "^2.1.6"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
+    "@tiptap/pm": "^2.8.0",
     "lodash-es": "^4.17.21",
+    "nuxt-lazy-hydrate": "^1.0.0",
     "pinia": "^2.1.7"
   }
 }

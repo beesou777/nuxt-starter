@@ -5,5 +5,5 @@ export default defineAppConfig({
     aliases: {},
     class: '',
     size: '1em',
-  }
-})
+  },
+});

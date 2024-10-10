@@ -5,8 +5,8 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 Live preview version [Template](https://template-nuxt3-ndragun92.vercel.app)
 
 ## What this starter template contains?
+
 - Nuxt security module
-- ESLint module
 - Strict typeCheck (enabled on development)
 - Pinia
 - TailwindCSS
