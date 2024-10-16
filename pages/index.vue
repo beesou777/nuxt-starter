@@ -1,8 +1,7 @@
 <template>
   <div>
-    page
+    <ui-card/>
   </div>
 </template>
 <script setup lang="ts">
-
 </script>
