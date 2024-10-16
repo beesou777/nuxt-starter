@@ -39,9 +39,9 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.scss'],
   modules: [
-    '@pinia/nuxt', // https://github.com/nuxt-modules/icon | https://icones.js.org/collection/all?s=github
-    '@nuxtjs/tailwindcss', // https://vueuse.org/guide/#nuxt
-    'nuxt-icon', // https://image.nuxt.com
+    '@pinia/nuxt', 
+    '@nuxtjs/tailwindcss',
+    'nuxt-icon',
     '@vueuse/nuxt',
     '@nuxt/image',
     '@nuxtjs/i18n',
