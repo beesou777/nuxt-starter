@@ -6,7 +6,12 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 3,
   },
-
+  site:{
+    url: 'https://eventeir.ai',
+    title: 'Eventeir',
+    trailingSlash: true,
+    excludeAppSources: ['nuxt:pages']
+  },
   tiptap: {
     prefix: 'Tiptap', //prefix for Tiptap imports, composables not included
   },
@@ -47,7 +52,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.scss'],
 
   modules: [
-    '@pinia/nuxt', 
+    '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
     '@vueuse/nuxt',
@@ -55,6 +60,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'nuxt-tiptap-editor',
     'nuxt-lazy-hydrate',
+    '@nuxtjs/sitemap',
   ],
 
   i18n: {
