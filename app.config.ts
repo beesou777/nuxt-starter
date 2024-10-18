@@ -1,6 +1,6 @@
 export default defineAppConfig({
-  name: 'your personal name',
-  description: 'a starter template for Nuxt 3 with HeadlessUI, Tailwindcss and PWA.',
+  name: 'Brining People Together, Enhanced By AI',
+  description: 'EventEir is your personalized event AI companion',
   nuxtIcon: {
     aliases: {},
     class: '',

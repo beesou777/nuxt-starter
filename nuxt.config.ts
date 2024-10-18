@@ -35,13 +35,6 @@ export default defineNuxtConfig({
   },
 
   vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: '@import "@/assets/css/utils/global.scss";',
-        },
-      },
-    },
     server: {
       hmr: {
         clientPort: 3000,
@@ -49,11 +42,8 @@ export default defineNuxtConfig({
     },
   },
 
-  css: ['~/assets/css/main.scss'],
-
   modules: [
     '@pinia/nuxt',
-    '@nuxtjs/tailwindcss',
     'nuxt-icon',
     '@vueuse/nuxt',
     '@nuxt/image',
@@ -61,6 +51,7 @@ export default defineNuxtConfig({
     'nuxt-tiptap-editor',
     'nuxt-lazy-hydrate',
     '@nuxtjs/sitemap',
+    '@nuxt/ui',
   ],
 
   i18n: {
